@@ -32,7 +32,7 @@ steps:
 
 - task: DotNetCoreCLI@2
   displayName: 'Build the project - Release'
- inputs:
+  inputs:
     command: 'publish'
     projects: '**/*.csproj'
     publishWebProjects: false
