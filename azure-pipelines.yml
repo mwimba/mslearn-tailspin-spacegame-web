@@ -1,9 +1,9 @@
 pool:
   vmImage: 'Ubuntu-16.04'
-demand:
+  demand:
   -npm
 
-  steps:
+steps:
   - task: DontNetCoreInstaller@0
     displayName: 'Use .NET Core SDK 2.1.505'
       inouts:
@@ -37,4 +37,3 @@ demand:
     command: 'build'
     arguments: '--no-restore --configuration Release'
     projects: '**/*.csproj'
-    
